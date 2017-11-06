@@ -10,5 +10,6 @@ I will be starting my journey into the world of Python. This repository will hos
     - types.py
     - conditionals_loops.py
     - functions.py
+    - semester_grade.py
   - __intro__
     - hello_world.py
