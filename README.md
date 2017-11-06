@@ -3,12 +3,12 @@ I will be starting my journey into the world of Python. This repository will hos
 
 ## Repo Structure
 - __Python-Journey__
-  - [README.md](Python-Journey/README.md)
+  - README.md
   - __basics__
-    - [builtin-functions.py](Python-Journey/basics/builtin-functions.py)
-    - [calculator.py](Python-Journey/basics/calculator.py)
-    - [types.py](Python-Journey/basics/types.py)
-    - [conditionals_loops.py](Python-Journey/basics/conditionals_loops.py)
-    - [functions.py](Python-Journey/basics/functions.py)
+    - builtin-functions.py
+    - calculator.py
+    - types.py
+    - conditionals_loops.py
+    - functions.py
   - __intro__
-    - [hello_world.py](Python-Journey/intro/hello_world.py)
+    - hello_world.py
