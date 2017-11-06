@@ -11,4 +11,5 @@ len(['hello', 'world'])  # Returns 2
 sorted(['5', '15', '3', '65', '1', '2'])    # Sort from lowest to highest
 sorted(["B", "Z", "a", "M"])    # Sorts alphabetically, Numbers -> Caps -> Lowercase
 user_input = input("Enter a value") # Gets the users inputted value
+"Something:Another".split(':')  # This will split the string into a list based on the split value ["Something", "Another"]
 # More to come
