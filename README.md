@@ -5,8 +5,12 @@ I will be starting my journey into the world of Python. This repository will hos
 - __Python-Journey__
   - README.md
   - __basics__
+      - __import_classes__
+          - __ init __.py
+          - npc.py
     - builtin-functions.py
     - calculator.py
+    - classes_objects.py
     - types.py
     - conditionals_loops.py
     - functions.py
