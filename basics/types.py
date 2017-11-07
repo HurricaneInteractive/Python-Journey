@@ -53,6 +53,7 @@ Lists (aka Arrays)
 ["Movies", "Games", "Python"][0]    # "Movies"
 print("I Like " + ["Movies", "Games"][1]) # Prints out I Like Games
 print(["Movies", 6, "Something"][1])    # Can't convert int to string
+["Movies", "Games"].append("Python")    # Adds value to list
 
 """
 Dictionaries (aka JavaScript Objects (key + value pair))
