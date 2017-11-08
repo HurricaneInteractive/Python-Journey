@@ -14,4 +14,6 @@ user_input = input("Enter a value") # Gets the users inputted value
 "Something:Another".split(':')  # This will split the string into a list based on the split value ["Something", "Another"]
 range(4)        # Gets range from 0 to "stop" -> 0 to 3. "stop" (4) is not included
 range(0, 10)    # Gets range between numbers -> 0 to 9. "stop" (10) is not included
+tuple(["list", "list1"])    # converts list into a tuple ("list", "list1")
+dict()  # Creates a new empty dictionary
 # More to come
