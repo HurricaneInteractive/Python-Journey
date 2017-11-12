@@ -1,0 +1,50 @@
+$def with (posts)
+
+$if session["user"] == None:
+    <h1>Hello CodeWizard</h1>
+$else:
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="post-box">
+                <form action="#" id="post-activity" class="card">
+                    <div class="card-body">
+                        <textarea name="content" class="post-input form-control border-bottom-0" placeholder="What's new, $session['user']['name']?"></textarea>
+                        <button id="post-button" class="btn btn-info btn-raised waves-effect mt-2" type="submit">Post</button>
+                    </div>
+                </form>
+            </div>
+            $for post in posts:
+                <div class="mb-3 w-100 card rounded activity">
+                    <h4 class="card-header">$post['user']['name']</h4>
+                    <div class="card-body">
+                        <small class="timestamp">$post['timestamp']</small>
+                        <p class="card-text">$post['content']</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="card-link">Like</a>
+                        <a href="#" class="card-link">Comment</a>
+                    </div>
+                    <div class="card-footer">
+                        <div class="comments">
+                            $for comment in post["comments"]
+                                <div class="card mb-2 w-100 rounded">
+                                    <h5 class="card-header">
+                                        <a href="/profile/$comment['username']">$comment['username']</a>
+                                    </h5>
+                                    <div class="card-body">
+                                        <small>Posted $comment['timestamp']</small>
+                                        <p>$comment['comment_text']</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="comment-add border border-left-0 border-right-0 border-bottom-0">
+                            <form action="#" class="comment-form">
+                                <input name="post_id" class="hidden form-control" value="$post['_id']" type="hidden">
+                                <textarea name="comment-text" class="form-control border-bottom-0" rows="5" placeholder="Write a comment"></textarea>
+                                <button type="submit" class="btn btn-info btn-raised waves-effect mt-2">Add Comment</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>

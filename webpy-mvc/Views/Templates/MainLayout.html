@@ -1,0 +1,67 @@
+$def with (page)
+$var js: static/js/scripts.js
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CodeWizard</title>
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css" integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="/static/css/style.css" />
+        
+    </head>
+    <body>
+        <div id="app">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">CodeWizard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect" href="/">Home Feed <div class="ripple-container"></div></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect" href="/discover">Discover <div class="ripple-container"></div></a>
+                            </li>
+                            $if session["user"] != None:
+                                <li class="nav-item">
+                                    <a class="nav-link waves-effect" href="/profile/$session['user']['username']">Profile <div class="ripple-container"></div></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link waves-effect" href="/settings">Settings <div class="ripple-container"></div></a>
+                                </li>
+                        </ul>
+                        <div class="pull-right my-2 my-lg-0">
+                            $if session["user"] == None:
+                                <a href="/login" class="btn waves-effect">Login</a>
+                                <a href="/register" class="btn btn-info btn-outline-info waves-effect">Register</a>
+                            $else:
+                                <a id="logout" href="/logout" class="btn btn-info btn-outline-info waves-effect">Logout</a>
+                        </div>
+                    </div>
+                </nav>
+            <br/>
+            <div class="container">
+                $:page
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/js/bootstrap-material-design.js" integrity="sha384-3xciOSDAlaXneEmyOo0ME/2grfpqzhhTcM4cE32Ce9+8DW/04AGoTACzQpphYGYe" crossorigin="anonymous"></script>
+
+        $if self.js:
+            $for script in self.js.split():
+                <script src="$script"></script>
+
+    </body>
+</html>

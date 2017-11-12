@@ -1,0 +1,67 @@
+$def with (posts, user_info)
+
+$code:
+    user = session["user"]
+    about = ''
+    hobbies = ''
+    birthday = ''
+
+    if "about" in user:
+        about = user["about"]
+
+    if "hobbies" in user:
+        hobbies = user["hobbies"]
+
+    if "birthday" in user:
+        birthday = user["birthday"]
+
+$if session['user'] == None:
+    <script>window.location.href="/login"</script>
+$else:
+    <div class="card mb-1">
+        <img class="card-img-top" src="https://images.wallpapersden.com/image/download/forest-minimal_57638_2560x1440.jpg" alt="Card image cap">
+    </div>
+    <nav class="nav nav-tabs mb-3" id="profile-tabs">
+        <a class="nav-link active" data-toggle="tab" href="#activity" role="tab">Activity</a>
+        <a class="nav-link" data-toggle="tab" href="#info" role="tab">Info</a>
+        <a class="nav-link" data-toggle="tab" href="#" role="tab">Code</a>
+        <a class="nav-link" data-toggle="tab" href="#" role="tab">Contact</a>
+    </nav>
+    <div class="row justify-content-center">
+        <div class="col-md-6 tab-content">
+            <div id="activity" class="tab-pane fade show active" role="tabpanel">
+                $for post in posts:
+                    <div class="card mb-3 rounded activity">
+                        <h4 class="card-header">$post['user']['name']</h4>
+                        <div class="card-body">
+                            <p class="card-text">$post['content']</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="card-link">Like</a>
+                            <a href="#" class="card-link">Comment</a>
+                        </div>
+                    </div>
+            </div>
+            <div id="info" class="tab-pane fade" role="tabpanel">
+                <div class="card mb-5">
+                    <h3 class="card-header">Basic Info</h3>
+                    <div class="card-body">
+                        <h4>Name</h4>
+                        <p>$user_info['name']</p>
+                        $if about != "":
+                            <div class="separator"></div>
+                            <h4>About</h4>
+                            <p>$about</p>
+                        $if hobbies != "":
+                            <div class="separator"></div>
+                            <h4>Hobbies</h4>
+                            <p>$hobbies</p>
+                        $if birthday != "":
+                            <div class="separator"></div>
+                            <h4>Birthday</h4>
+                            <p>$birthday</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
