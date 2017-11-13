@@ -1,6 +1,7 @@
 import requests
 import simplejson as json
 from classes.xml import XML
+import xml.dom.minidom
 
 
 api = open("./apikey.txt", "r+")
@@ -19,11 +20,14 @@ rss_link = "https://newsapi.org/"
 rss_description = "RSS feed based on news api response"
 rss_articles = data["articles"]
 
-xml = XML(rss_title, rss_link, rss_description, rss_articles)
-output = xml.generate_header()
-output += xml.generate_items()
-output += xml.generate_footer()
+xml_gen = XML(rss_title, rss_link, rss_description, rss_articles)
+output = xml_gen.generate_header()
+output += xml_gen.generate_items()
+output += xml_gen.generate_footer()
 
 rss = open("./newsfeed.rss", "w+")
+output = xml.dom.minidom.parseString(output)
+output = output.toprettyxml()
+#print(output)
 rss.write(output)
 print("Done")

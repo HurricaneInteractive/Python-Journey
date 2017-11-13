@@ -1,1 +1,68 @@
-<?xml version="1.0" encoding="UTF-8" ?><rss version="2.0"><channel><title>News API</title><link>https://newsapi.org/</link><description>RSS feed based on news api response</description><item><title>US deal with Russia on Syria will save 'tremendous numbers of lives': Trump</title><link>http://www.abc.net.au/news/2017-11-11/trump-says-us-deal-with-russia-on-syria-will-save-many-lives/9141522</link><description>Donald Trump says an agreement with Russian President Vladimir Putin on Syria would save many lives.</description><pubDate>None</pubDate></item><item><title>Ellyse Perry stars for Australia with record knock against England</title><link>http://www.abc.net.au/news/2017-11-11/ellyse-perry-stars-for-australia-in-womens-ashes-test/9141612</link><description>Ellyse Perry breaks the Australian women's Test record for the highest score, smashing an unbeaten 213 against England in their day-night Women's Ashes encounter at North Sydney Oval.</description><pubDate>None</pubDate></item><item><title>Queensland Premier rubbishes One Nation's claims schoolchildren taught masturbation</title><link>http://www.abc.net.au/news/2017-11-11/annastacia-palaszczuk-rubbishes-one-nations-safe-schools-claim/9141520</link><description>Queensland Premier Annastacia Palaszczuk slaps down One Nation's claims that teachers are showing children sex tricks in the classroom as untrue.</description><pubDate>None</pubDate></item><item><title>John Alexander resigns amid deepening citizenship crisis for Government</title><link>http://www.abc.net.au/news/2017-11-11/john-alexander-to-resign-amid-dual-citizenship-concerns/9138814</link><description>Federal Liberal MP John Alexander has become the latest victim of the citizenship scandal, resigning after reaching the conclusion he can not be certain he is not a dual citizen.</description><pubDate>None</pubDate></item><item><title>Trawler Dianne survivor Ruben McDornan speaks of heartbreak over lost mates</title><link>http://www.abc.net.au/news/2017-11-11/ruben-mcdornan-facebook-post-tribute-trawler-sinking-qld/9141064</link><description>The sole survivor of a trawler that capsized off the Queensland coast opens up publicly for the first time, posting an emotional tribute to his six lost crewmates on social media.</description><pubDate>None</pubDate></item><item><title>Tonga upsets New Zealand in Rugby League World Cup boilover</title><link>http://www.abc.net.au/news/2017-11-11/tonga-beats-new-zealand-in-rugby-league-world-cup/9141468</link><description>Tonga creates Rugby League World Cup history with a stunning 28-22 victory over giants New Zealand.</description><pubDate>None</pubDate></item><item><title>'Fundamental agreement' reached on rebadged TPP deal</title><link>http://www.abc.net.au/news/2017-11-11/trans-pacific-partnership-fundamental-deal-reached/9141384</link><description>Eleven Pacific Rim countries reach agreement on continuing with a free trade pact after the US abandons it.</description><pubDate>None</pubDate></item><item><title>One Nation, Jacqui Lambie eye off Tasmanian election</title><link>http://www.abc.net.au/news/2017-11-11/pauline-hanson-and-jacqui-lambie-parties-register-in-tasmania/9141378</link><description>Pauline Hanson and Jacqui Lambie could run candidates in the next Tasmanian election, as incumbents warn against negative campaigning.</description><pubDate>None</pubDate></item><item><title>Three lawyers charged in probe into suspected criminal activity in Qld</title><link>http://www.abc.net.au/news/2017-11-11/three-lawyers-charged-in-ccc-probe/9141254</link><description>Three Brisbane lawyers are charged with aggravated fraud after a joint Queensland police and CCC investigation into suspected criminal activity within elements of the legal profession.</description><pubDate>None</pubDate></item><item><title>Despite the 0-0, it finally clicks for Ange's Socceroos in their best away performance</title><link>http://www.abc.net.au/news/2017-11-11/socceroos-best-away-performance-against-honduras/9141088</link><description>It was frustrating, and there's still some work to do, but the Socceroos produce arguably their best performance on the road in some time in the 0-0 first-leg draw with Honduras.</description><pubDate>None</pubDate></item></channel></rss>
+<?xml version="1.0" ?>
+<rss version="2.0">
+	<channel>
+		<title>News API</title>
+		<link>https://newsapi.org/</link>
+		<description>RSS feed based on news api response</description>
+		<item>
+			<title>New senator says Hanson booted him from One Nation in 'vitriolic' attack</title>
+			<link>http://www.abc.net.au/news/2017-11-13/hanson-says-anning-has-abandoned-one-nation/9144142</link>
+			<description>Fraser Anning says Pauline Hanson kicked him out of One Nation just hours after he was sworn in, contradicting her claims that he abandoned the party.</description>
+			<guid>http://www.abc.net.au/news/2017-11-13/hanson-says-anning-has-abandoned-one-nation/9144142</guid>
+		</item>
+		<item>
+			<title>Jacqui Lambie's departure from Parliament could be imminent</title>
+			<link>http://www.abc.net.au/news/2017-11-13/jacqui-lambies-departure-from-parliament-could-be-imminent/9144956</link>
+			<description>Colourful Tasmanian senator Jacqui Lambie is scrambling to check whether she is a dual citizen.</description>
+			<guid>http://www.abc.net.au/news/2017-11-13/jacqui-lambies-departure-from-parliament-could-be-imminent/9144956</guid>
+		</item>
+		<item>
+			<title>Need to renegotiate your NBN plan? Read this first</title>
+			<link>http://www.abc.net.au/news/2017-11-13/read-this-before-renegotiating-your-telstra-nbn-plan/9143078</link>
+			<description>Before you get on the phone, here's everything you need to know about your connection and what can be done about it.</description>
+			<guid>http://www.abc.net.au/news/2017-11-13/read-this-before-renegotiating-your-telstra-nbn-plan/9143078</guid>
+		</item>
+		<item>
+			<title>Death toll from powerful earthquake near Iraq-Iran border rises above 300</title>
+			<link>http://www.abc.net.au/news/2017-11-13/scores-killed-from-powerful-earthquake-on-iran-iraq-border/9143082</link>
+			<description>More than 300 people are killed and thousands injured after a powerful earthquake strikes in northern Iraq near the Iranian border, officials say.</description>
+			<guid>http://www.abc.net.au/news/2017-11-13/scores-killed-from-powerful-earthquake-on-iran-iraq-border/9143082</guid>
+		</item>
+		<item>
+			<title>Here's what is in the alternative same-sex marriage bill</title>
+			<link>http://www.abc.net.au/news/2017-11-13/alternative-same-sex-marriage-bill-explainer/9143578</link>
+			<description>Liberal senator James Paterson releases a new same-sex marriage bill which he says offers better religious protections. But Labor says it's a delaying tactic.</description>
+			<guid>http://www.abc.net.au/news/2017-11-13/alternative-same-sex-marriage-bill-explainer/9143578</guid>
+		</item>
+		<item>
+			<title>'This is the hardest thing we've had to write': Second school crash victim farewelled</title>
+			<link>http://www.abc.net.au/news/2017-11-13/funeral-for-eight-year-old-boy-killed-at-greenacre-school-crash/9144930</link>
+			<description>The parents of the second boy killed in last week's Banksia Road Primary School crash describe the pain of losing their son as hundreds of people pay their respects during his funeral service.</description>
+			<guid>http://www.abc.net.au/news/2017-11-13/funeral-for-eight-year-old-boy-killed-at-greenacre-school-crash/9144930</guid>
+		</item>
+		<item>
+			<title>Parents reach settlement with IVF clinic after Fragile X passed to kids</title>
+			<link>http://www.abc.net.au/news/2017-11-13/fragile-x-lawsuit-mum-sues-over-gene-test-failure/9143522</link>
+			<description>The parents of two boys who inherited an intellectual disability say they can move on with their lives now they have reached a settlement with a Sydney IVF clinic.</description>
+			<guid>http://www.abc.net.au/news/2017-11-13/fragile-x-lawsuit-mum-sues-over-gene-test-failure/9143522</guid>
+		</item>
+		<item>
+			<title>Junior drag racing suspended in WA after girl dies in 'one-in-a-million' crash</title>
+			<link>http://www.abc.net.au/news/2017-11-13/junior-drag-racing-suspended-after-anita-board-crash/9144166</link>
+			<description>The WA Government temporarily bans junior drag racing as police investigate the death of a girl while driving her dragster.</description>
+			<guid>http://www.abc.net.au/news/2017-11-13/junior-drag-racing-suspended-after-anita-board-crash/9144166</guid>
+		</item>
+		<item>
+			<title>Record global CO2 emissions predicted for 2017 after 3-year plateau</title>
+			<link>http://www.abc.net.au/news/science/2017-11-13/record-global-co2-emissions-predicted-for-2017/9144838</link>
+			<description>Scientists are predicting a record global carbon emissions level for 2017.</description>
+			<guid>http://www.abc.net.au/news/science/2017-11-13/record-global-co2-emissions-predicted-for-2017/9144838</guid>
+		</item>
+		<item>
+			<title>In Delhi, you can taste the pollution in the air — but nobody cares</title>
+			<link>http://www.abc.net.au/news/2017-11-13/why-delhis-air-worsens-as-beijings-improves/9143090</link>
+			<description>Air quality and its impact on health simply isn't a major concern for many Indians.</description>
+			<guid>http://www.abc.net.au/news/2017-11-13/why-delhis-air-worsens-as-beijings-improves/9143090</guid>
+		</item>
+	</channel>
+</rss>

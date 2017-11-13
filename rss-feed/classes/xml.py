@@ -1,5 +1,4 @@
 import datetime
-from email.utils import formatdate, parsedate_tz
 
 
 class XML:
@@ -18,7 +17,5 @@ class XML:
     def generate_items(self):
         output = ''
         for article in self.articles:
-            pubDate = article["publishedAt"]
-            # pubDate = str(parsedate_tz(pubDate))
-            output += '<item><title>' + article["title"] + '</title><link>' + article["url"] + '</link><description>' + article["description"] + '</description><pubDate>' + pubDate + '</pubDate></item>'
+            output += '<item><title>' + article["title"] + '</title><link>' + article["url"] + '</link><description>' + article["description"] + '</description><guid>' + article['url'] + '</guid></item>'
         return output
