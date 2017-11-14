@@ -1,0 +1,9 @@
+.card-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card:not(.search) {
+    width: calc(100% / 3 - 10px);
+    margin-bottom: 10px;
+}
