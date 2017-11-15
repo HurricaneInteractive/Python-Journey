@@ -1,0 +1,26 @@
+<div class="row justify-content-center" style="margin-top: 20px;">
+    <div class="col-md-4">
+        <div class="card">
+            <h4 class="card-header">Upload CSV File</h4>
+            <div class="card-body">
+                <form action="/processCSV" method="POST" enctype="multipart/form-data" id="csv-upload" class="mb-0">
+                    <label class="w-100 custom-file">
+                        <input type="file" name="csv_upload" id="csv_upload" class="custom-file-input">
+                        <span class="custom-file-control"></span>
+                    </label>
+                    <div class="d-flex justify-content-end mt-3">
+                        <button type="submit" class="btn btn-outline-info btn-info mb-0">Upload.</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="card">
+            <h5 class="card-header">Results:</h5>
+            <div class="card-body" id="result" style="max-height: calc(100vh - 160px); overflow-y: auto;">
+
+            </div>
+        </div>
+    </div>
+</div>
