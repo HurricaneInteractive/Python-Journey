@@ -1,0 +1,100 @@
+{
+  "topics": [
+    {
+      "name": "outdoors-adventure",
+      "human": "Outdoors & Adventure"
+    },
+    {
+      "name": "tech",
+      "human": "Tech"
+    },
+    {
+      "name": "parents-family",
+      "human": "Family"
+    },
+    {
+      "name": "health-wellness",
+      "human": "Health & Wellness"
+    },
+    {
+      "name": "sports-fitness",
+      "human": "Sports & Fitness"
+    },
+    {
+      "name": "photography",
+      "human": "Photography"
+    },
+    {
+      "name": "food",
+      "human": "Food & Drink"
+    },
+    {
+      "name": "writing",
+      "human": "Writing"
+    },
+    {
+      "name": "language",
+      "human": "Language & Culture"
+    },
+    {
+      "name": "music",
+      "human": "Music"
+    },
+    {
+      "name": "movements",
+      "human": "Movements"
+    },
+    {
+      "name": "lgbtq",
+      "human": "LGBTQ"
+    },
+    {
+      "name": "film",
+      "human": "Film"
+    },
+    {
+      "name": "education",
+      "human": "Learning"
+    },
+    {
+      "name": "games-sci-fi",
+      "human": "Sci-Fi & Games"
+    },
+    {
+      "name": "beliefs",
+      "human": "Beliefs"
+    },
+    {
+      "name": "arts-culture",
+      "human": "Arts"
+    },
+    {
+      "name": "book-clubs",
+      "human": "Book Clubs"
+    },
+    {
+      "name": "dancing",
+      "human": "Dance"
+    },
+    {
+      "name": "pets",
+      "human": "Pets"
+    },
+    {
+      "name": "hobbies-crafts",
+      "human": "Hobbies & Crafts"
+    },
+    {
+      "name": "fashion-beauty",
+      "human": "Fashion & Beauty"
+    },
+    {
+      "name": "social",
+      "human": "Social"
+    },
+    {
+      "name": "career-business",
+      "human": "Career & Business"
+    }
+  ]
+}

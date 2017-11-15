@@ -8,7 +8,8 @@ web.config.debug = False
 
 urls = (
     '/', 'Home',
-    '/retrievePosts', 'RetrievePost'
+    '/retrievePosts', 'RetrievePost',
+    '/autoComplete', 'AutoComplete'
 )
 
 app = web.application(urls, globals())
@@ -45,6 +46,14 @@ class RetrievePost:
 
         data = json.dumps(data)
         return data
+
+
+class AutoComplete:
+    def GET(self):
+        f = open('./data/topics.json', 'r+')
+        topics = json.loads(f.read())
+        return json.dumps(topics['topics'])
+
 
 
 if __name__ == "__main__":
