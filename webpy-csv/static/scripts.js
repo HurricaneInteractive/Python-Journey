@@ -1,8 +1,36 @@
 $ = jQuery.noConflict();
 $(document).ready(function() {
+
+    jQuery.fn.selectText = function(){
+        var doc = document
+            , element = this[0]
+            , range, selection
+        ;
+        if (doc.body.createTextRange) {
+            range = document.body.createTextRange();
+            range.moveToElementText(element);
+            range.select();
+        } else if (window.getSelection) {
+            selection = window.getSelection();        
+            range = document.createRange();
+            range.selectNodeContents(element);
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+    };
+
+    $('#select').on('click', function(e) {
+        e.preventDefault();
+        $('#result').selectText();
+    });
+
     $(document).on('submit', '#csv-upload', function(e) {
         e.preventDefault();
         // var data = $('#csv_upload')[0];
+        if ($('#csv_upload')[0].files.length < 1) {
+            $('#result').append('<div class="rounded m-0 alert alert-danger" role="alert">Did you even try?</div>');
+            return false;
+        }
         var fd = new FormData();
         fd.append('csv_upload', $('#csv_upload')[0].files[0]);
         $.ajax({
