@@ -23,6 +23,11 @@ class ProcessCSV:
         file = web.input(csv_upload={})
         data_lines = []
         file_hash = blake2b(b'Hacked').hexdigest()
+        ext = file["csv_upload"].filename.split('.')[-1]
+        print(ext)
+        if ext != 'csv':
+            return Exception('Wrong file extension!')
+        
         with open('files/' + file_hash + '.csv', 'wb') as f:
             f.write(file['csv_upload'].value)
         

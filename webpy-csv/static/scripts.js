@@ -46,7 +46,8 @@ $(document).ready(function() {
                 $('#result').empty().append('<pre>' + code + '</pre>');
             },
             error: function(err) {
-                console.log(err);
+                $('#result').append('<div class="rounded m-0 alert alert-danger" role="alert">' + err.responseText + '</div>');
+                return false;
             }
         });
     });
