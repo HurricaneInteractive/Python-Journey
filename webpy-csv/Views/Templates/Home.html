@@ -4,10 +4,16 @@
             <h4 class="card-header">Upload CSV File</h4>
             <div class="card-body">
                 <form action="/processCSV" method="POST" enctype="multipart/form-data" id="csv-upload" class="mb-0">
-                    <label class="w-100 custom-file">
-                        <input type="file" name="csv_upload" id="csv_upload" class="custom-file-input">
-                        <span class="custom-file-control"></span>
-                    </label>
+                    <div class="form-group">
+                        <label class="w-100 custom-file">
+                            <input type="file" name="csv_upload" id="csv_upload" class="custom-file-input">
+                            <span class="custom-file-control"></span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="delimiter">Delimiter</label>
+                        <input type="text" class="form-control" name="delimiter" id="delimiter" placeholder="Delimiter (Default ',')">
+                    </div>
                     <div class="d-flex justify-content-end mt-3">
                         <button type="submit" class="btn btn-outline-info btn-info mb-0">Upload.</button>
                     </div>
