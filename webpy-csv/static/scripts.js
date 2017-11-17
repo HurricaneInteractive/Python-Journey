@@ -33,6 +33,17 @@ $(document).ready(function() {
         }
         var fd = new FormData();
         fd.append('csv_upload', $('#csv_upload')[0].files[0]);
+
+        var other_input = $(this).serializeArray();
+        $.each(other_input, function(key, input) {
+            if (input.name == 'delimiter') {
+                if (input.value.trim() == '') {
+                    input.value = ',';
+                }
+            }
+            fd.append(input.name, input.value);
+        });
+
         $.ajax({
             url: '/processCSV',
             data: fd,
