@@ -1,10 +1,46 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Home</h1>
-            <button id="send" class="btn btn-outline-primary">TEST</button>
+    <div class="row justify-content-center" style="margin-top: 20px;">
+        <div class="col-md-4">
+            <div class="card mb-2">
+                <h4 class="card-header">Upload CSV File</h4>
+                <div class="card-body">
+                    <form action="" method="POST" enctype="multipart/form-data" id="csv-upload" class="mb-0">
+
+                        <div class="form-group">
+                            {{ form.csvfile(class_="form-control") }}
+                        </div>
+                        <div class="form-group">
+                            {{ form.delimiter(class_="form-control", placeholder="Delimiter, Default comma") }}
+                        </div>
+                        <div class="d-flex justify-content-end mt-3">
+                            <button type="submit" class="btn btn-outline-info btn-info mb-0">Upload.</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card mb-2">
+                <div class="card-body">
+                    Made by: <a href="https://github.com/HurricaneInteractive" target="_blank" rel="noopener noreferrer">Adro.codes</a>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    Built with: <a href="http://flask.pocoo.org/" target="_blank" rel="noopener noreferrer">Flask</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header align-items-center d-flex justify-content-between">
+                    <h5 class="m-0">Upload CSV File</h5>
+                    <button id="select" class="m-0 btn btn-info btn-outline-info">Select JSON</button>
+                </div>
+                <div class="card-body" id="result" style="max-height: calc(100vh - 160px); overflow-y: auto;">
+
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
