@@ -7,7 +7,7 @@
                 <h4 class="card-header">Upload CSV File</h4>
                 <div class="card-body">
                     <form action="" method="POST" enctype="multipart/form-data" id="csv-upload" class="mb-0">
-
+                        {{ form.csrf_token }}
                         <div class="form-group">
                             {{ form.csvfile(class_="form-control") }}
                         </div>
