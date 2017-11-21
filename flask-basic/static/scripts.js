@@ -45,6 +45,9 @@ $(document).ready(function() {
         });
 
         $.ajax({
+            headers: {
+                'X-CSRFToken': $('#csrf_token').val()
+            },
             url: '/',
             data: fd,
             type: 'POST',
@@ -52,15 +55,15 @@ $(document).ready(function() {
             processData: false,
             dataType: 'json',
             success: function(res) {
-                // code = JSON.stringify(res, null, 4);
-                // $('#result').parent().show();
-                // $('#result').empty().append('<pre>' + code + '</pre>');
-                console.log(res);
+                code = JSON.stringify(res, null, 4);
+                $('#result').parent().show();
+                $('#result').empty().append('<pre>' + code + '</pre>');
+                // console.log(res);
             },
             error: function(err) {
                 console.log(err);
-                // $('#result').append('<div class="rounded m-0 alert alert-danger" role="alert">' + err.responseText + '</div>');
-                // return false;
+                $('#result').append('<div class="rounded m-0 alert alert-danger" role="alert">' + err.responseText + '</div>');
+                return false;
             }
         });
     });
