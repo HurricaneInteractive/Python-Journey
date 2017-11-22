@@ -29,22 +29,21 @@ class CSVForm(Form):
 @app.route('/', methods=['GET', 'POST'])
 def index():
     form = CSVForm(request.form)
-    UPLOAD_PATH = 'uploads/'
     if request.method == 'POST' and form.validate():
+        delimiter = form.delimiter.data
         file_data = request.files['csvfile'].read()
         data_lines = []
+        
         t = str(int(time.time()))
         path = os.path.dirname(os.path.realpath(__file__))
-        print(path)
-        with open(path + '/uploads/' + t + '.csv', 'wb') as f:
-            f.write(file_data)
+        file_name = path + '/uploads/' + t + '.csv'
+        
+        open(file_name, 'wb').write(file_data)
+        with open(file_name, 'r') as csv_file:
+            csv_reader = csv.DictReader(csv_file, delimiter=delimiter)
+            data_lines = [dict(row) for row in csv_reader]
 
-        with open(path + '/uploads/' + t + '.csv', 'r') as csv_file:
-            csv_reader = csv.DictReader(csv_file)
-            for row in csv_reader:
-                data_lines.append(dict(row))
-
-        os.remove(path + '/uploads/' + t + '.csv')
+        os.remove(file_name)
         return json.dumps(data_lines)
     return render_template('home.html', form=form)
 

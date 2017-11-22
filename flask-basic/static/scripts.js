@@ -26,7 +26,6 @@ $(document).ready(function() {
 
     $(document).on('submit', '#csv-upload', function(e) {
         e.preventDefault();
-        // var data = $('#csv_upload')[0];
         if ($('#csvfile')[0].files.length < 1) {
             $('#result').append('<div class="rounded m-0 alert alert-danger" role="alert">Did you even try?</div>');
             return false;
@@ -58,7 +57,7 @@ $(document).ready(function() {
                 code = JSON.stringify(res, null, 4);
                 $('#result').parent().show();
                 $('#result').empty().append('<pre>' + code + '</pre>');
-                // console.log(res);
+                $('#csv-upload')[0].reset();
             },
             error: function(err) {
                 console.log(err);
