@@ -3,3 +3,6 @@ __pycache__/
 *.txt
 webpy/
 .idea/
+node_modules/
+flask-react/fullstack-template/server/dev/
+package-lock.json
