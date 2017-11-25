@@ -2,6 +2,6 @@ import React from 'react'
 
 export default class App extends React.Component {
     render() {
-        return <p>Hello World</p>
+        return <h1>Home Page</h1>
     }
 }
