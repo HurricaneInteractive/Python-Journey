@@ -6,3 +6,4 @@ webpy/
 node_modules/
 flask-react/fullstack-template/server/dev/
 package-lock.json
+flask-rest-api/venv/
