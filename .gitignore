@@ -3,8 +3,8 @@ __pycache__/
 *.txt
 webpy/
 .idea/
+venv/
 node_modules/
 flask-react/fullstack-template/server/dev/
 package-lock.json
-flask-rest-api/venv/
-flask-rest-api-sqlite/venv/
+data.db
