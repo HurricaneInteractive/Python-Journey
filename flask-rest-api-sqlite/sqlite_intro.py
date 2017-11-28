@@ -1,6 +1,7 @@
 '''
-    Delete data.db file before running this file :)
-    This should only be used as a reference
+    Delete data.db file before running this file if there is one
+    Run once to create a new data.db file.
+    When running the app start from the flask-rest-api-sqlite directory and run 'python code/app.py'
 '''
 
 import sqlite3
