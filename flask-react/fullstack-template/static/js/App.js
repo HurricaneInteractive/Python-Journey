@@ -30,7 +30,7 @@ export default class App extends React.Component {
                 <ul>
                     {
                         this.state.items.map((item, index) => {
-                            return <li key={index}>{item.name}</li>
+                            return <li key={index}>{item.id} | {item.name}</li>
                         })
                     }
                 </ul>
